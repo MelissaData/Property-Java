@@ -1,16 +1,13 @@
-package melissadata.property.view;
+package com.melissadata.property.view;
 
-import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TabPane;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import melissadata.property.model.PropertyTransaction;
-import melissadata.property.Main;
+import com.melissadata.property.model.PropertyTransaction;
+import com.melissadata.property.Main;
 
 public class PropertyController  {
 

@@ -1,4 +1,4 @@
-package melissadata.property;
+package com.melissadata.property;
 
 import java.io.IOException;
 
@@ -7,8 +7,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import melissadata.property.view.PropertyController;
-import melissadata.property.view.RootLayoutController;
+import com.melissadata.property.view.PropertyController;
+import com.melissadata.property.view.RootLayoutController;
 
 public class Main extends Application {
     private Stage primaryStage;
@@ -33,7 +33,7 @@ public class Main extends Application {
         try {
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("view/RootLayout.fxml"));
+            loader.setLocation(Main.class.getResource("RootLayout.fxml"));
             rootLayout = (BorderPane) loader.load();
 
             // Show the scene containing the root layout.
@@ -57,7 +57,7 @@ public class Main extends Application {
         try {
             // Load Property overview.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("view/Property.fxml"));
+            loader.setLocation(Main.class.getResource("Property.fxml"));
             BorderPane property = (BorderPane) loader.load();
 
             // Set Property
